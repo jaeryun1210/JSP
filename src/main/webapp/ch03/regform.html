@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>회원 가입 폼 만들기</title>
+<style>	/*css정의*/
+	h2 {	/*h2 박스정의*/
+		border-radius: 5px;	/*박스 모서리 둥글게*/
+		background-color: wheat;
+		text-align: center;	/*텍스트 가운데 정렬*/
+		padding: 15px 0;	/*박스 높이*/
+	}
+	#regform{	/*입력양식부분의 아이디 #regform 선택*/
+		padding: 15px 20px;
+		border-radius: 10px;
+		margin: auto;	/*박스 가운데 정렬*/
+		width: 50%;
+		background-color: SandyBrown;
+	}
+</style>
+<script>	//자바스크립트 정의
+	function signUp(){
+	alert("정말로 가입하시겠습니까?");
+	document.getElementById("regform").style.dispaly = "none";
+	document.getElementById("rname").innerHTML= document.form1.name.value;
+	document.getElementById("remail").innerHTML= document.form1.email.value;
+	document.getElementById("result").setAttribute("style", "dispaly: block; backgorund-color: Khaki;");
+}
+</script>
+</head>
+<body>	<!-- html정의 -->
+	<h2>회원 가입</h2>
+	<hr>
+	<div id="regform">
+		<form name="form1">
+			<label>이름</label><br>	<!-- br은 줄바꿈,p는 문단구분 -->
+			<input type="text" name="name" size="40"><br>
+			<hr>	<!-- hr은 선 하나그어짐 -->
+			<label>이메일</label><br>
+			<input type="email" name="email" size="40"><br>
+			<button type="button" onClick="signUp()">가입</button>
+		</form>
+	</div>
+	<div id="result" class="result">
+		<h3>가입 정보</h3>
+		<hr>
+		이름 : <span id="rname"></span><br>
+		이메일 : <span id="remail"></span><br>
+	</div>
+	<script>
+		document.getElementById("result").style.display = "none";
+	</script>
+</body>
+</html>

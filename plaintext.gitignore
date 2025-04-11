@@ -1,0 +1,34 @@
+# Eclipse project files
+.classpath
+.project
+.settings/
+bin/
+build/
+target/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Others
+*.log
+
+# Eclipse 관련 무시
+.classpath
+.project
+.settings/
+.p2/
+.metadata/
+bin/
+build/
+target/
+
+# node_modules 무시 (웹개발 플러그인 때문)
+node_modules/
+
+# 시스템 파일 무시
+.DS_Store
+Thumbs.db
+
+# 기타
+*.log

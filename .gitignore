@@ -1,0 +1,19 @@
+# Eclipse 관련
+.classpath
+.project
+.settings/
+.p2/
+.metadata/
+bin/
+build/
+target/
+
+# Node_modules 무시
+node_modules/
+
+# 운영체제 별
+.DS_Store
+Thumbs.db
+
+# 기타
+*.log
